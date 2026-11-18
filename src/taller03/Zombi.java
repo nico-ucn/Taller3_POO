@@ -11,7 +11,7 @@ public class Zombi extends Monstruo implements Mordedor, Regenerable{
 	@Override
     public String regenerarse() {
 		
-        return "¡El zombi reconstruye su tejido podrido y recupera firmeza!";
+        return "¡El zombi Usa la habilidad de regenerarse!";
     }
 	@Override
     public String morder() {

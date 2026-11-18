@@ -17,12 +17,12 @@ public class Vampiro extends Monstruo implements Mordedor, Volador {
 
     @Override
     public String morder() {
-        return "¡El vampiro hunde sus colmillos afilados a gran velocidad!";
+        return "¡El vampiro utiliza sus colmillos y empieza a morder!";
     }
 
     @Override
     public String volar() {
-        return "¡El vampiro despliega sus alas oscuras y se eleva por los aires!";
+        return "¡El vampiro se eleva por los aires y vuela!";
     }
 
     @Override
