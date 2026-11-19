@@ -31,4 +31,8 @@ public class Zombi extends Monstruo implements Mordedor, Regenerable{
         return (tipo + " | Vida " + vida + " | Vel " + velocidad +  " | Fue " + fuerza + " | Res " + resistencia +  " | Mordida " + fuerzaMordida);
     }
 
+	public int getFuerzaMordida() {
+		return fuerzaMordida;
+	}
+
 }
