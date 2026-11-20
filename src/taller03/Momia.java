@@ -6,8 +6,8 @@ public class Momia extends Monstruo implements Regenerable, Furioso {
 	
 	
 
-	public Momia(String tipo, int vida, int velocidad, int fuerza, int resistencia, int longitudVendajes) {
-		super(tipo, vida, velocidad, fuerza, resistencia);
+	public Momia(int vida, int velocidad, int fuerza, int resistencia, int longitudVendajes) {
+		super("Momia", vida, velocidad, fuerza, resistencia);
 		this.longitudVendajes = longitudVendajes;
 	}
 
