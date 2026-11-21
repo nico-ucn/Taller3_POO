@@ -284,5 +284,30 @@ public class Sistema {
         return lineas;
     }
     
+    public boolean finalizarSesion() {
+        if (usuarioActual == null || usuarioActual.strip().isEmpty() || historial.isEmpty()) {
+            return false;
+        }
+
+        String nombreLimpio = usuarioActual.strip();
+
+        for (Jugador j : jugadores) {
+            if (j.getNombre().equalsIgnoreCase(nombreLimpio)) {
+                if (puntajeSesion > j.getPuntajeMaximo()) {
+                    j.setPuntajeMaximo(puntajeSesion);
+                    return true;
+                }
+                return false;
+            }
+        }
+
+        jugadores.add(new Jugador(nombreLimpio, puntajeSesion));
+        return true;
+    }
+    
+    public int getCantidadMonstruos() {
+        return monstruos.size();
+    }
+    
 
 }
